@@ -1,0 +1,32 @@
+<template>
+  <div>
+    <p>{{sex}}</p>
+      <mt-radio 
+        title="性别" 
+        :options="[
+          {
+            label:'男',
+            value:'0'
+          },
+          {
+            label:'女',
+            value:'1'
+          },
+          {
+            label:'保密',
+            value:'2'
+          }
+        ]"
+        v-model="sex">
+      </mt-radio>
+  </div>
+</template>
+<script>
+export default {
+  data(){
+    return {
+      sex:'2'
+    }
+  }
+}
+</script>
